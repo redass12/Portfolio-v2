@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+body.dark-mode {
+  #hero {
+    background: $dark-theme-background;
+    color: $white-color;
+  }
+
+  #about {
+    background: $dark-theme-secondary-background;
+  }
+
+  #projects {
+    background-color: $dark-theme-background;
+    color: $white-color;
+  }
+
+  .text-color-main,
+  .cta-btn--hero {
+    background-image: linear-gradient(135deg, $dark-primary-color 0%, $dark-secondary-color 100%);
+  }
+
+  .cta-btn--resume {
+    border: 2px solid $dark-primary-color;
+    color: $dark-primary-color;
+  }
+
+}
