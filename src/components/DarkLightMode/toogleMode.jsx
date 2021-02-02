@@ -3,7 +3,13 @@ import { FaSun , FaMoon } from 'react-icons/fa';
 
 const ToogleMode = () => {
 
-    const [icon , setIcon] = useState(localStorage.getItem('Theme') || 'Light');
+
+
+    const Theme = typeof window !== 'undefined' ? localStorage.getItem('Theme') : null
+    
+    
+
+    const [icon , setIcon] = useState(Theme|| 'Light');
 
     const toogleIcons = icon === 'light' ? <FaSun className="sun" /> : <FaMoon className="moon" />;
 
